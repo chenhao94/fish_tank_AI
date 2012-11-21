@@ -1,6 +1,6 @@
 #include "fish.h"
 #include "ch_con.h"
-// version 1.0.con
+// version 1.1.con
 
 static const double speedEstimate=1.0;
 static const long SpeedCap=50;
@@ -103,7 +103,7 @@ void ch_con::assignPoints()
 	long est=0;
 	
 	// Health
-	while (point>0 && (hp<att*5 || hp<lev*2+8) )
+	while (point>0 && (hp<att*8 || hp<lev*5/2+8) )
 	 {
 		point--;
 		increaseHealth();
