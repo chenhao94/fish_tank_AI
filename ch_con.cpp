@@ -1,6 +1,6 @@
 #include "fish.h"
 #include "ch_con.h"
-// version 1.1.con
+// version 1.2.con
 
 static const double speedEstimate=1.0;
 static const long SpeedCap=50;
@@ -139,16 +139,16 @@ void ch_con::play()
 		 flag=MOVED;
 		else goto RUN;
 	 }
-	else if (rate<0.9 || lev<15)
+	else //if (rate<0.9 || lev<15)
 	 {
 		if (normalAtt())
 		 flag=MOVED;
 	 }
-	else
-	 {
-		if (healthyAtt())
-		 flag=MOVED;
-	 }
+	//else
+	// {
+	//	if (healthyAtt())
+	//	 flag=MOVED;
+	// }
 	if (flag==MOVED)
 	 goto ASSIGN_POINTS;
 	
