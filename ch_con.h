@@ -1,5 +1,5 @@
-#ifndef ___PLAYER_____CH_H______
-#define ___PLAYER_____CH_H______
+#ifndef ____CH____CON_H______
+#define ____CH____CON_H______
 #include <cstdlib>
 #include <cstring>
 #include <ctime>
