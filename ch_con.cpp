@@ -6,7 +6,7 @@ static const double speedEstimate=1.0;
 static const long SpeedCap=50;
 static const long dir[4][2]={{1,0},{0,1},{-1,0},{0,-1}};
 
-others::others():hp(0),dietime(0),sp(0),x(0),y(0),lastx(0),lasty(0),maxmove(1),status(0)
+others_ch_con::others_ch_con():hp(0),dietime(0),sp(0),x(0),y(0),lastx(0),lasty(0),maxmove(1),status(0)
 {}
 
 void ch_con::getInfo()

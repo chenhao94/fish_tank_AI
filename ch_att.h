@@ -14,14 +14,14 @@
 #define oo 1000000000
 #define eps (1e-7)
 
-class others
+class others_ch_att
 {
 	public:
 	long hp,dietime,sp,x,y,lastx,lasty;	//
 	long maxmove;
 	bool status;
 	
-	others();
+	others_ch_att();
 };
 
 class ch_att:public fish
@@ -30,7 +30,7 @@ class ch_att:public fish
 	long myID,x,y,lev,point,exp,hp,maxhp,att,sp;
 	long g[N+1][M+1];
 	
-	others p[MAX_PLAYER+1];
+	others_ch_att p[MAX_PLAYER+1];
 	void getInfo();
 	void getMap();
 	void assignPoints();
