@@ -1,6 +1,6 @@
 #include "fish.h"
 #include "ch_att.h"
-// version 1.0.att
+// version 1.1.att
 #define abs1(x) ((x)>0?(x):(-(x)))
 #define min1(a,b) ((a)<(b)?(a):(b))
 #define max1(a,b) ((a)>(b)?(a):(b))
@@ -98,11 +98,11 @@ void ch_att::init()
 {
 	myID=getID();
 	getInfo();
-	for (int i=1;i<=5;i++)
+	for (int i=1;i<=4;i++)
 	 increaseHealth();
-	for (int i=1;i<=3;i++)
-	 increaseStrength();
 	for (int i=1;i<=2;i++)
+	 increaseStrength();
+	for (int i=1;i<=4;i++)
 	 increaseSpeed();
 }
 
@@ -147,16 +147,16 @@ void ch_att::play()
 		 flag=MOVED;
 		else goto RUN;
 	 }
-	else if (rate<0.8 || lev<10)
+	else// if (rate<0.9 || lev<15)
 	 {
 		if (normalAtt())
 		 flag=MOVED;
 	 }
-	else
+	/*else
 	 {
 		if (healthyAtt())
 		 flag=MOVED;
-	 }
+	 }*/
 	if (flag==MOVED)
 	 goto ASSIGN_POINTS;
 	
