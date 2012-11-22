@@ -1,6 +1,14 @@
 #include "fish.h"
 #include "ch_con.h"
 // version 1.2.con
+#define abs1(x) ((x)>0?(x):(-(x)))
+#define min1(a,b) ((a)<(b)?(a):(b))
+#define max1(a,b) ((a)>(b)?(a):(b))
+#define DEAD 0
+#define ALIVE 1
+#define MOVED 1
+#define oo 1000000000
+#define eps (1e-7)
 
 static const double speedEstimate=1.0;
 static const long SpeedCap=50;
